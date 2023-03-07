@@ -4,9 +4,11 @@ namespace AppBindingCommands.Views;
 
 public partial class UsuarioView : ContentPage
 {
-	public UsuarioView()
+    private UsuarioViewModel viewModel;
+    public UsuarioView()
 	{
 		InitializeComponent();
-		BindingContext = new UsuarioViewModel();
+		viewModel = new UsuarioViewModel();
+		BindingContext = viewModel; 
 	}
 }
